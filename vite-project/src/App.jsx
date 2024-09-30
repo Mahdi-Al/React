@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function card() {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="card m-5">
+        <img
+          className="card-img-top"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bob_Dylan_-_Azkena_Rock_Festival_2010_2.jpg/330px-Bob_Dylan_-_Azkena_Rock_Festival_2010_2.jpg"
+          alt="Card image cap"
+        />
+        <div className="card-body">
+          <h5 className="card-title">Bob Dylan</h5>
+          <p className="card-text">
+            Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American
+            singer/songwriter, author, and artist who has been an influential
+            figure in popular music and culture for more than five decades.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Bob_Dylan"
+            className="btn btn-primary"
+          >
+            Go to wikipedia
+          </a>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default card;

@@ -25,4 +25,4 @@ let's create component (function) called `Card` that outputs the following HTML:
 
 ## Hints:
 
-- Remember to use the correct React syntax `className` instead of `class` when creating your card.
+- Remember to use the correct React syntax `className` instead of `class` when creating your card.✅
